@@ -12,11 +12,13 @@ jobs:
   - python: 3.5-dev
   - python: 3.6
   - python: 3.6-dev
+  - python: 3.7
   - python: 3.7-dev
+  - python: 3.8-dev
   - stage: coverage
     python: 3.5
     script:
-    - coverage run --source=ConfigEnv -m unittest tests
+    - coverage run --source=RepositoryChecker -m unittest tests
     after_success:
     - coverage report -m
     - coveralls
