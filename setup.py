@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='RepositoryChecker',
-    version='0.0.1',
+    version='0.0.2',
     author="Théo \"Nydareld\" Guerin",
     author_email="theo.guerin.pro@gmail.com",
     description="Check repository and corect it with parametred actions",
